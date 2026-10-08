@@ -1,6 +1,6 @@
-# 🤖 Projeto Final DIO + IBM Bob — Assistente de Trilhas de IA
+# 🤖 Geo-Explorer — Assistente de Trilhas de IA com IBM Bob
 
-> Projeto desenvolvido durante o **Bootcamp DIO + IBM Bob** com o objetivo de construir um assistente inteligente que consulta trilhas de aprendizado, gera desafios de código e emite certificados fictícios — tudo orquestrado por um agente de IA com comandos, skills e um servidor MCP.
+> **Desafio Geo-Explorer** do Bootcamp DIO + IBM Bob. Projeto que constrói um assistente inteligente capaz de consultar trilhas de aprendizado, gerar desafios de código e emitir certificados fictícios — tudo orquestrado por um agente de IA com Slash Commands, Skills e um servidor MCP.
 
 ---
 
@@ -17,9 +17,10 @@
 6. [Arquitetura e Decisões Técnicas](#️-arquitetura-e-decisões-técnicas)
 7. [Testes](#-testes)
 8. [Insights e Dicas para Profissionais](#-insights-e-dicas-para-profissionais)
-9. [Glossário](#-glossário)
-10. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-11. [Licença](#-licença)
+9. [O que Aprendi](#-o-que-aprendi)
+10. [Glossário](#-glossário)
+11. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+12. [Licença](#-licença)
 
 ---
 
@@ -558,6 +559,35 @@ Indexe o `trilhas_dio.json` em um vector store (FAISS, Pinecone, ChromaDB) e sub
 
 ---
 
+## 🎓 O que Aprendi
+
+Este desafio foi muito mais do que gerar código com uma IA — foi aprender a **trabalhar com um agente como parceiro de desenvolvimento**, entendendo o que ele faz bem, onde ele precisa de direção e como validar o que ele entrega.
+
+### Sobre Agentes de IA na prática
+- **Prompts são especificações, não pedidos.** Quanto mais claro eu era sobre o formato de saída, os casos de erro e os critérios de aceitação, melhor e mais preciso era o resultado. A diferença entre "crie testes" e "crie testes com 70% de cobertura, cobrindo os 3 comandos, gravando resultado em txt" é enorme.
+- **O agente não especula — ele lê.** Antes de qualquer implementação, o Bob inspecionava os arquivos existentes. Isso evitou retrabalho e conflitos. Aprendi a sempre verificar o estado atual antes de pedir uma mudança.
+- **Revisar o que o agente entrega é parte do trabalho.** Percebi que arquivos como `hello.md` e `.gitkeep` foram criados como scaffolding inicial e precisavam ser removidos antes da entrega. O agente não toma essa decisão sozinho — cabe ao desenvolvedor.
+
+### Sobre o protocolo MCP
+- Entendi que o **MCP (Model Context Protocol)** funciona como uma API padronizada para ferramentas de IA. Da mesma forma que qualquer aplicação pode consumir uma REST API, qualquer cliente MCP pode consumir as ferramentas do servidor que construímos — independente de qual LLM está sendo usado.
+- Aprendi a diferença entre **transporte stdio** (quando o Bob inicia o servidor como subprocesso) e **transporte HTTP** (quando o servidor roda de forma independente e aceita conexões remotas).
+- Entendi por que `console.log` quebra o servidor MCP em modo stdio: a saída padrão é o canal do protocolo, então qualquer texto que não seja JSON-RPC corrompe a comunicação.
+
+### Sobre estrutura de projetos com IA
+- **Skills e Commands são camadas diferentes** com propósitos distintos: o Command é acionado pelo usuário com `/`, enquanto a Skill é o comportamento que o agente carrega internamente. Manter os dois em sincronia é responsabilidade do desenvolvedor.
+- **Separar lógica de negócio das integrações** permitiu criar 58 testes unitários que rodam em 0.002 segundos, sem depender do LLM, sem arquivos externos. Isso mostrou que boas práticas de software se aplicam igualmente a projetos com IA.
+- **O `.bobignore` tem o mesmo papel do `.gitignore`**: define o que o agente não precisa ver. Um contexto limpo produz respostas mais precisas.
+
+### Melhorias que realizei além do básico
+- Catálogo com **25 trilhas** reais de IA/ML (o desafio pedia apenas trilhas fictícias)
+- **MCP Server com duplo transporte** (stdio + HTTP Streamable) pronto para produção
+- **Autenticação Bearer token** com variável de ambiente para o servidor HTTP
+- **58 testes automatizados** com 100% de aprovação (a meta era 70%)
+- Documentação detalhada dos **5 prompts reais** usados no desenvolvimento, com análise técnica de cada um
+- **Diagrama de arquitetura** em ASCII mostrando o fluxo completo de componentes
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 | Tecnologia | Versão | Uso |
@@ -582,7 +612,7 @@ MIT — Projeto educacional desenvolvido durante o Bootcamp DIO + IBM Bob.
 
 <div align="center">
 
-**Desenvolvido com 🤖 IBM Bob durante o Bootcamp DIO**
+**Desenvolvido com 🤖 IBM Bob durante o Bootcamp DIO — Desafio Geo-Explorer**
 
 *"A melhor forma de aprender IA é construindo com ela."*
 
