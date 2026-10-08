@@ -1,0 +1,114 @@
+
+╔══════════════════════════════════════════════════════════════════╗
+║        RELATÓRIO DE TESTES - PROJETO FINAL DIO IBM BOB          ║
+╠══════════════════════════════════════════════════════════════════╣
+║  Data/Hora  : 08/10/2026 13:14:35                               ║
+║  Arquivo    : tests/test_dio_commands.py                        ║
+╚══════════════════════════════════════════════════════════════════╝
+
+ESCOPO DOS TESTES
+─────────────────
+  • /trilha   — TrilhaEngine  (busca, aleatoriedade, formatação)
+  • /desafio  — DesafioEngine (validação nível, geração, formatação)
+  • /certificado — CertificadoEngine (cálculos, código, formatação)
+  • Fluxo completo integrado (trilha → desafio → certificado)
+
+RESULTADO GERAL
+───────────────
+  Total de testes  : 58
+  ✅ Aprovados      : 58
+  ❌ Falhas/Erros   : 0
+  📊 Taxa de aprovação: 100.0%
+  Meta (≥ 70%)     : ✅ ATINGIDA
+
+DETALHAMENTO
+────────────
+test_badges_corretas (__main__.TestCertificadoEngine.test_badges_corretas) ... ok
+test_carga_horaria_calculada (__main__.TestCertificadoEngine.test_carga_horaria_calculada)
+Carga horária = modulos × 8 ... ok
+test_codigo_unico_a_cada_geracao (__main__.TestCertificadoEngine.test_codigo_unico_a_cada_geracao)
+Cada certificado deve ter código de verificação único. ... ok
+test_codigo_verificacao_formato (__main__.TestCertificadoEngine.test_codigo_verificacao_formato)
+Código deve ter formato XXXX-XXXX-XXXX-XXXX (4 grupos de 4 chars). ... ok
+test_data_emissao_formato_brasileiro (__main__.TestCertificadoEngine.test_data_emissao_formato_brasileiro)
+Data de emissão deve estar no formato DD/MM/AAAA. ... ok
+test_formatar_contem_badges (__main__.TestCertificadoEngine.test_formatar_contem_badges) ... ok
+test_formatar_contem_codigo_verificacao (__main__.TestCertificadoEngine.test_formatar_contem_codigo_verificacao) ... ok
+test_formatar_contem_nome_trilha (__main__.TestCertificadoEngine.test_formatar_contem_nome_trilha) ... ok
+test_formatar_contem_nome_usuario (__main__.TestCertificadoEngine.test_formatar_contem_nome_usuario) ... ok
+test_formatar_contem_xp (__main__.TestCertificadoEngine.test_formatar_contem_xp) ... ok
+test_formatar_retorna_string (__main__.TestCertificadoEngine.test_formatar_retorna_string) ... ok
+test_gerar_retorna_dict (__main__.TestCertificadoEngine.test_gerar_retorna_dict) ... ok
+test_nome_arquivo_lowercase (__main__.TestCertificadoEngine.test_nome_arquivo_lowercase) ... ok
+test_nome_arquivo_slug (__main__.TestCertificadoEngine.test_nome_arquivo_slug) ... ok
+test_nome_usuario_em_maiusculas (__main__.TestCertificadoEngine.test_nome_usuario_em_maiusculas) ... ok
+test_nome_vazio_lanca_excecao (__main__.TestCertificadoEngine.test_nome_vazio_lanca_excecao) ... ok
+test_tecnologias_formatadas (__main__.TestCertificadoEngine.test_tecnologias_formatadas) ... ok
+test_xp_total_correto (__main__.TestCertificadoEngine.test_xp_total_correto) ... ok
+test_formatar_contem_tempo (__main__.TestDesafioEngine.test_formatar_contem_tempo) ... ok
+test_formatar_contem_titulo (__main__.TestDesafioEngine.test_formatar_contem_titulo) ... ok
+test_formatar_contem_xp (__main__.TestDesafioEngine.test_formatar_contem_xp) ... ok
+test_formatar_retorna_string (__main__.TestDesafioEngine.test_formatar_retorna_string) ... ok
+test_gerar_avancado (__main__.TestDesafioEngine.test_gerar_avancado) ... ok
+test_gerar_campos_obrigatorios (__main__.TestDesafioEngine.test_gerar_campos_obrigatorios)
+Desafio gerado deve conter todos os campos essenciais. ... ok
+test_gerar_iniciante (__main__.TestDesafioEngine.test_gerar_iniciante) ... ok
+test_gerar_intermediario (__main__.TestDesafioEngine.test_gerar_intermediario) ... ok
+test_gerar_nivel_invalido_lanca_excecao (__main__.TestDesafioEngine.test_gerar_nivel_invalido_lanca_excecao) ... ok
+test_gerar_tecnologia_vazia_lanca_excecao (__main__.TestDesafioEngine.test_gerar_tecnologia_vazia_lanca_excecao) ... ok
+test_gerar_tem_dois_casos_de_teste (__main__.TestDesafioEngine.test_gerar_tem_dois_casos_de_teste) ... ok
+test_nivel_avancado_valido (__main__.TestDesafioEngine.test_nivel_avancado_valido) ... ok
+test_nivel_iniciante_valido (__main__.TestDesafioEngine.test_nivel_iniciante_valido) ... ok
+test_nivel_intermediario_valido (__main__.TestDesafioEngine.test_nivel_intermediario_valido) ... ok
+test_nivel_invalido (__main__.TestDesafioEngine.test_nivel_invalido) ... ok
+test_nivel_vazio_invalido (__main__.TestDesafioEngine.test_nivel_vazio_invalido) ... ok
+test_titulo_contem_tecnologia_e_nivel (__main__.TestDesafioEngine.test_titulo_contem_tecnologia_e_nivel) ... ok
+test_fluxo_langchain_intermediario (__main__.TestFluxoCompleto.test_fluxo_langchain_intermediario)
+Fluxo: busca LangChain → desafio Intermediário → certificado. ... ok
+test_fluxo_python_iniciante (__main__.TestFluxoCompleto.test_fluxo_python_iniciante)
+Fluxo: busca Python → desafio Iniciante → certificado. ... ok
+test_fluxo_tensorflow_avancado (__main__.TestFluxoCompleto.test_fluxo_tensorflow_avancado)
+Fluxo: busca TensorFlow → desafio Avançado → certificado. ... ok
+test_fluxo_trilha_aleatoria_desafio_certificado (__main__.TestFluxoCompleto.test_fluxo_trilha_aleatoria_desafio_certificado)
+Fluxo completo: trilha aleatória → desafio → certificado. ... ok
+test_formatacao_completa_gera_markdown (__main__.TestFluxoCompleto.test_formatacao_completa_gera_markdown)
+Verificar que a formatação de todos os 3 outputs gera Markdown válido. ... ok
+test_busca_case_insensitive (__main__.TestTrilhaEngine.test_busca_case_insensitive)
+Busca deve ignorar maiúsculas/minúsculas. ... ok
+test_busca_exata_retorna_trilha (__main__.TestTrilhaEngine.test_busca_exata_retorna_trilha)
+Busca por tecnologia exata deve retornar ao menos 1 trilha. ... ok
+test_busca_inexistente_retorna_lista_vazia (__main__.TestTrilhaEngine.test_busca_inexistente_retorna_lista_vazia)
+Busca por tecnologia inexistente deve retornar lista vazia. ... ok
+test_busca_por_nome_da_trilha (__main__.TestTrilhaEngine.test_busca_por_nome_da_trilha)
+Busca por substring do nome da trilha deve funcionar. ... ok
+test_busca_retorna_campos_obrigatorios (__main__.TestTrilhaEngine.test_busca_retorna_campos_obrigatorios)
+Cada trilha retornada deve conter campos essenciais. ... ok
+test_busca_substring (__main__.TestTrilhaEngine.test_busca_substring)
+Busca parcial 'tensor' deve encontrar trilha de TensorFlow. ... ok
+test_formatar_plano_contem_badges (__main__.TestTrilhaEngine.test_formatar_plano_contem_badges)
+Plano formatado deve listar todas as badges. ... ok
+test_formatar_plano_contem_nome_trilha (__main__.TestTrilhaEngine.test_formatar_plano_contem_nome_trilha)
+Plano formatado deve conter o nome da trilha. ... ok
+test_formatar_plano_contem_xp (__main__.TestTrilhaEngine.test_formatar_plano_contem_xp)
+Plano formatado deve mencionar XP total. ... ok
+test_formatar_plano_nao_vitalicio (__main__.TestTrilhaEngine.test_formatar_plano_nao_vitalicio)
+Plano de trilha não-vitalícia deve conter 'tempo limitado'. ... ok
+test_formatar_plano_retorna_string (__main__.TestTrilhaEngine.test_formatar_plano_retorna_string)
+formatar_plano deve retornar uma string. ... ok
+test_formatar_plano_vitalicio (__main__.TestTrilhaEngine.test_formatar_plano_vitalicio)
+Plano de trilha vitalícia deve conter 'Vitalício'. ... ok
+test_listar_tecnologias_contem_python (__main__.TestTrilhaEngine.test_listar_tecnologias_contem_python) ... ok
+test_listar_tecnologias_retorna_lista (__main__.TestTrilhaEngine.test_listar_tecnologias_retorna_lista) ... ok
+test_listar_tecnologias_sem_duplicatas (__main__.TestTrilhaEngine.test_listar_tecnologias_sem_duplicatas) ... ok
+test_multiplas_trilhas_aleatorias_variam (__main__.TestTrilhaEngine.test_multiplas_trilhas_aleatorias_variam)
+Com 20 chamadas, deve haver ao menos 2 IDs distintos (aleatoriedade real). ... ok
+test_trilha_aleatoria_retorna_dict (__main__.TestTrilhaEngine.test_trilha_aleatoria_retorna_dict)
+trilha_aleatoria deve retornar um dicionário. ... ok
+test_trilha_aleatoria_tem_id (__main__.TestTrilhaEngine.test_trilha_aleatoria_tem_id)
+Trilha aleatória deve ter ID. ... ok
+
+----------------------------------------------------------------------
+Ran 58 tests in 0.002s
+
+OK
+
