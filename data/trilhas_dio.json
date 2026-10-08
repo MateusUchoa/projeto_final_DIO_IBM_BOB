@@ -1,3 +1,592 @@
 {
-  "trilhas": []
+  "trilhas": [
+    {
+      "id": 1,
+      "nome": "Fundamentos de Inteligência Artificial com Python",
+      "tecnologia": ["Python", "NumPy", "Pandas", "Scikit-learn"],
+      "nivel": "Iniciante",
+      "modulos": 8,
+      "xp_total": 3200,
+      "badges": [
+        "Python Starter",
+        "AI Explorer",
+        "Data Wrangler"
+      ],
+      "promocoes": {
+        "desconto": "30%",
+        "validade": "2025-12-31",
+        "cupom": "DIO30AI"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Introdução ao ecossistema Python para IA", "data": "2025-02-10", "duracao_min": 90 },
+        { "titulo": "Manipulação de dados com Pandas na prática", "data": "2025-03-05", "duracao_min": 120 }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Machine Learning do Zero ao Avançado",
+      "tecnologia": ["Python", "Scikit-learn", "XGBoost", "LightGBM"],
+      "nivel": "Intermediário",
+      "modulos": 12,
+      "xp_total": 5800,
+      "badges": [
+        "ML Practitioner",
+        "Model Tuner",
+        "Feature Engineer",
+        "Ensemble Master"
+      ],
+      "promocoes": {
+        "desconto": "20%",
+        "validade": "2025-11-30",
+        "cupom": "MLZERO20"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Algoritmos supervisionados: teoria e prática", "data": "2025-02-18", "duracao_min": 120 },
+        { "titulo": "Hiperparametrização com Optuna", "data": "2025-04-12", "duracao_min": 90 },
+        { "titulo": "Deploy de modelos ML com FastAPI", "data": "2025-05-20", "duracao_min": 150 }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Deep Learning com TensorFlow e Keras",
+      "tecnologia": ["Python", "TensorFlow", "Keras", "CUDA"],
+      "nivel": "Avançado",
+      "modulos": 14,
+      "xp_total": 7500,
+      "badges": [
+        "Deep Learner",
+        "Neural Architect",
+        "GPU Accelerator",
+        "Keras Expert"
+      ],
+      "promocoes": {
+        "desconto": "15%",
+        "validade": "2025-10-15",
+        "cupom": "DEEP15TF"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Redes neurais artificiais do zero", "data": "2025-03-01", "duracao_min": 120 },
+        { "titulo": "CNN para classificação de imagens", "data": "2025-03-22", "duracao_min": 135 },
+        { "titulo": "RNN e LSTM para séries temporais", "data": "2025-04-30", "duracao_min": 120 }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Visão Computacional com OpenCV e YOLO",
+      "tecnologia": ["Python", "OpenCV", "YOLOv8", "Roboflow"],
+      "nivel": "Intermediário",
+      "modulos": 10,
+      "xp_total": 5200,
+      "badges": [
+        "Vision Engineer",
+        "Object Detector",
+        "YOLO Champion"
+      ],
+      "promocoes": {
+        "desconto": "25%",
+        "validade": "2025-09-30",
+        "cupom": "VISION25"
+      },
+      "vitalicio": false,
+      "lives_ao_vivo": [
+        { "titulo": "Detecção de objetos em tempo real com YOLOv8", "data": "2025-02-25", "duracao_min": 150 },
+        { "titulo": "Segmentação de imagens médicas com OpenCV", "data": "2025-04-08", "duracao_min": 120 }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Processamento de Linguagem Natural com Transformers",
+      "tecnologia": ["Python", "HuggingFace", "BERT", "spaCy"],
+      "nivel": "Avançado",
+      "modulos": 13,
+      "xp_total": 7000,
+      "badges": [
+        "NLP Specialist",
+        "Transformer Guru",
+        "BERT Certified",
+        "Text Miner"
+      ],
+      "promocoes": {
+        "desconto": "10%",
+        "validade": "2025-12-15",
+        "cupom": "NLP10HF"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Tokenização e embeddings na prática", "data": "2025-03-10", "duracao_min": 90 },
+        { "titulo": "Fine-tuning de BERT para classificação de texto", "data": "2025-04-15", "duracao_min": 135 },
+        { "titulo": "Construindo um chatbot com Transformers", "data": "2025-05-28", "duracao_min": 150 }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Generative AI com LangChain e OpenAI",
+      "tecnologia": ["Python", "LangChain", "OpenAI API", "FAISS"],
+      "nivel": "Intermediário",
+      "modulos": 11,
+      "xp_total": 6200,
+      "badges": [
+        "GenAI Builder",
+        "Prompt Engineer",
+        "LangChain Dev",
+        "RAG Master"
+      ],
+      "promocoes": {
+        "desconto": "35%",
+        "validade": "2025-08-31",
+        "cupom": "GENAI35"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Criando aplicações RAG com LangChain", "data": "2025-02-20", "duracao_min": 120 },
+        { "titulo": "Agentes autônomos com LangChain Agents", "data": "2025-03-18", "duracao_min": 150 },
+        { "titulo": "Memória e contexto em LLMs", "data": "2025-05-05", "duracao_min": 90 }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Stable Diffusion e Geração de Imagens com IA",
+      "tecnologia": ["Python", "Stable Diffusion", "ComfyUI", "ControlNet"],
+      "nivel": "Intermediário",
+      "modulos": 9,
+      "xp_total": 4800,
+      "badges": [
+        "Image Creator",
+        "Diffusion Artist",
+        "ControlNet Expert"
+      ],
+      "promocoes": {
+        "desconto": "40%",
+        "validade": "2025-07-31",
+        "cupom": "IMGGEN40"
+      },
+      "vitalicio": false,
+      "lives_ao_vivo": [
+        { "titulo": "Gerando imagens com Stable Diffusion local", "data": "2025-02-14", "duracao_min": 120 },
+        { "titulo": "ControlNet: controlando poses e composições", "data": "2025-03-28", "duracao_min": 135 }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "MLOps: Deploy e Monitoramento de Modelos de IA",
+      "tecnologia": ["Python", "MLflow", "Docker", "Kubernetes", "AWS SageMaker"],
+      "nivel": "Avançado",
+      "modulos": 15,
+      "xp_total": 8200,
+      "badges": [
+        "MLOps Engineer",
+        "Pipeline Builder",
+        "Cloud AI Deployer",
+        "Model Monitor",
+        "DevOps AI"
+      ],
+      "promocoes": {
+        "desconto": "20%",
+        "validade": "2025-11-15",
+        "cupom": "MLOPS20"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Pipelines de ML com MLflow na prática", "data": "2025-03-05", "duracao_min": 150 },
+        { "titulo": "Containerizando modelos com Docker", "data": "2025-04-02", "duracao_min": 120 },
+        { "titulo": "Orquestração com Kubernetes para IA", "data": "2025-05-15", "duracao_min": 135 }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "IA na Nuvem com Azure AI Services",
+      "tecnologia": ["Azure Cognitive Services", "Azure ML", "Python", "REST API"],
+      "nivel": "Intermediário",
+      "modulos": 11,
+      "xp_total": 5600,
+      "badges": [
+        "Azure AI Certified",
+        "Cloud Thinker",
+        "Cognitive Builder"
+      ],
+      "promocoes": {
+        "desconto": "25%",
+        "validade": "2025-10-31",
+        "cupom": "AZURE25AI"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Vision API do Azure aplicada a documentos", "data": "2025-03-12", "duracao_min": 90 },
+        { "titulo": "Azure OpenAI Service: criando apps inteligentes", "data": "2025-04-22", "duracao_min": 120 }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "IA Generativa com Google Gemini e Vertex AI",
+      "tecnologia": ["Google Gemini", "Vertex AI", "Python", "Google Cloud"],
+      "nivel": "Intermediário",
+      "modulos": 10,
+      "xp_total": 5400,
+      "badges": [
+        "Gemini Developer",
+        "Vertex AI Pro",
+        "Google Cloud AI"
+      ],
+      "promocoes": {
+        "desconto": "30%",
+        "validade": "2025-09-15",
+        "cupom": "GEMINI30"
+      },
+      "vitalicio": false,
+      "lives_ao_vivo": [
+        { "titulo": "Multimodalidade com Gemini Pro Vision", "data": "2025-02-28", "duracao_min": 120 },
+        { "titulo": "Fine-tuning no Vertex AI passo a passo", "data": "2025-04-18", "duracao_min": 150 }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Redes Neurais Convolucionais para Reconhecimento Facial",
+      "tecnologia": ["Python", "TensorFlow", "DeepFace", "OpenCV"],
+      "nivel": "Avançado",
+      "modulos": 12,
+      "xp_total": 6800,
+      "badges": [
+        "Face Recognition Expert",
+        "CNN Specialist",
+        "Biometric AI"
+      ],
+      "promocoes": {
+        "desconto": "15%",
+        "validade": "2025-12-01",
+        "cupom": "FACE15CNN"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Arquiteturas CNN: ResNet, VGG e EfficientNet", "data": "2025-03-20", "duracao_min": 120 },
+        { "titulo": "Face detection e recognition com DeepFace", "data": "2025-05-10", "duracao_min": 135 }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "AutoML e IA sem Código com H2O e AutoGluon",
+      "tecnologia": ["H2O AutoML", "AutoGluon", "Python", "Google AutoML"],
+      "nivel": "Iniciante",
+      "modulos": 7,
+      "xp_total": 3000,
+      "badges": [
+        "AutoML Explorer",
+        "No-Code AI Builder"
+      ],
+      "promocoes": {
+        "desconto": "50%",
+        "validade": "2025-06-30",
+        "cupom": "AUTOML50"
+      },
+      "vitalicio": false,
+      "lives_ao_vivo": [
+        { "titulo": "Construindo modelos sem escrever código com H2O", "data": "2025-02-06", "duracao_min": 90 }
+      ]
+    },
+    {
+      "id": 13,
+      "nome": "IA Aplicada a Finanças com Python e ML",
+      "tecnologia": ["Python", "Scikit-learn", "Prophet", "QuantLib"],
+      "nivel": "Intermediário",
+      "modulos": 11,
+      "xp_total": 5900,
+      "badges": [
+        "FinTech AI Expert",
+        "Quant Developer",
+        "Forecasting Pro"
+      ],
+      "promocoes": {
+        "desconto": "20%",
+        "validade": "2025-11-20",
+        "cupom": "FINTAI20"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Previsão de séries temporais financeiras com Prophet", "data": "2025-03-08", "duracao_min": 120 },
+        { "titulo": "Detecção de fraudes com ML", "data": "2025-04-25", "duracao_min": 135 }
+      ]
+    },
+    {
+      "id": 14,
+      "nome": "Reinforcement Learning: Agentes Inteligentes",
+      "tecnologia": ["Python", "OpenAI Gym", "Stable-Baselines3", "PyTorch"],
+      "nivel": "Avançado",
+      "modulos": 13,
+      "xp_total": 7200,
+      "badges": [
+        "RL Pioneer",
+        "Agent Trainer",
+        "Policy Master",
+        "Reward Optimizer"
+      ],
+      "promocoes": {
+        "desconto": "10%",
+        "validade": "2025-12-20",
+        "cupom": "RL10GYM"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Q-Learning e DQN na prática com Gym", "data": "2025-04-03", "duracao_min": 150 },
+        { "titulo": "Treinando agentes com PPO e Stable-Baselines3", "data": "2025-05-22", "duracao_min": 135 }
+      ]
+    },
+    {
+      "id": 15,
+      "nome": "Engenharia de Prompts para LLMs",
+      "tecnologia": ["ChatGPT", "Claude", "Gemini", "Prompt Engineering"],
+      "nivel": "Iniciante",
+      "modulos": 6,
+      "xp_total": 2800,
+      "badges": [
+        "Prompt Crafter",
+        "LLM Communicator"
+      ],
+      "promocoes": {
+        "desconto": "45%",
+        "validade": "2025-07-15",
+        "cupom": "PROMPT45"
+      },
+      "vitalicio": false,
+      "lives_ao_vivo": [
+        { "titulo": "Chain-of-thought e few-shot prompting", "data": "2025-02-22", "duracao_min": 90 },
+        { "titulo": "Prompts para geração de código e automação", "data": "2025-03-15", "duracao_min": 90 }
+      ]
+    },
+    {
+      "id": 16,
+      "nome": "Data Science com IBM Watson e watsonx",
+      "tecnologia": ["IBM Watson", "watsonx.ai", "Python", "Jupyter Notebooks"],
+      "nivel": "Intermediário",
+      "modulos": 12,
+      "xp_total": 6000,
+      "badges": [
+        "Watson Developer",
+        "watsonx Certified",
+        "IBM AI Pro"
+      ],
+      "promocoes": {
+        "desconto": "30%",
+        "validade": "2025-10-01",
+        "cupom": "IBM30WAT"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Explorando watsonx.ai para NLP empresarial", "data": "2025-03-17", "duracao_min": 120 },
+        { "titulo": "AutoAI no Watson Studio: do dado ao modelo", "data": "2025-04-28", "duracao_min": 150 }
+      ]
+    },
+    {
+      "id": 17,
+      "nome": "Análise de Sentimentos e Opinião com IA",
+      "tecnologia": ["Python", "VADER", "BERT", "Tweepy"],
+      "nivel": "Intermediário",
+      "modulos": 9,
+      "xp_total": 4600,
+      "badges": [
+        "Sentiment Analyst",
+        "Opinion Miner",
+        "Social AI"
+      ],
+      "promocoes": {
+        "desconto": "25%",
+        "validade": "2025-09-01",
+        "cupom": "SENT25"
+      },
+      "vitalicio": false,
+      "lives_ao_vivo": [
+        { "titulo": "Minerando opiniões do Twitter com Tweepy", "data": "2025-02-12", "duracao_min": 90 },
+        { "titulo": "Análise de reviews com BERT fine-tuning", "data": "2025-04-06", "duracao_min": 120 }
+      ]
+    },
+    {
+      "id": 18,
+      "nome": "Detecção de Anomalias com IA para Segurança",
+      "tecnologia": ["Python", "Isolation Forest", "Autoencoders", "Keras"],
+      "nivel": "Avançado",
+      "modulos": 11,
+      "xp_total": 6500,
+      "badges": [
+        "Anomaly Hunter",
+        "Security AI Expert",
+        "Autoencoder Pro"
+      ],
+      "promocoes": {
+        "desconto": "15%",
+        "validade": "2025-11-05",
+        "cupom": "ANOM15SEC"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Detecção de intrusão com Isolation Forest", "data": "2025-03-25", "duracao_min": 120 },
+        { "titulo": "Autoencoders para detecção de fraudes", "data": "2025-05-08", "duracao_min": 135 }
+      ]
+    },
+    {
+      "id": 19,
+      "nome": "IA para Jogos com Unity ML-Agents",
+      "tecnologia": ["Unity", "ML-Agents", "Python", "C#"],
+      "nivel": "Intermediário",
+      "modulos": 10,
+      "xp_total": 5100,
+      "badges": [
+        "Game AI Developer",
+        "ML-Agents Trainer",
+        "Unity AI Pro"
+      ],
+      "promocoes": {
+        "desconto": "20%",
+        "validade": "2025-08-20",
+        "cupom": "GAMEAI20"
+      },
+      "vitalicio": false,
+      "lives_ao_vivo": [
+        { "titulo": "Criando NPCs inteligentes com ML-Agents", "data": "2025-03-06", "duracao_min": 150 },
+        { "titulo": "Treinando agentes para plataformas 2D no Unity", "data": "2025-04-20", "duracao_min": 120 }
+      ]
+    },
+    {
+      "id": 20,
+      "nome": "IA Multimodal: Texto, Imagem e Áudio",
+      "tecnologia": ["Python", "CLIP", "Whisper", "GPT-4o"],
+      "nivel": "Avançado",
+      "modulos": 14,
+      "xp_total": 7800,
+      "badges": [
+        "Multimodal Architect",
+        "CLIP Specialist",
+        "Whisper Developer",
+        "Fusion AI"
+      ],
+      "promocoes": {
+        "desconto": "10%",
+        "validade": "2025-12-10",
+        "cupom": "MULTI10"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Buscas semânticas de imagens com CLIP", "data": "2025-03-14", "duracao_min": 120 },
+        { "titulo": "Transcrição e tradução automática com Whisper", "data": "2025-04-10", "duracao_min": 90 },
+        { "titulo": "Aplicações GPT-4o com entrada mista", "data": "2025-05-25", "duracao_min": 150 }
+      ]
+    },
+    {
+      "id": 21,
+      "nome": "IA para Saúde: Diagnóstico por Imagem",
+      "tecnologia": ["Python", "PyTorch", "MONAI", "DICOM"],
+      "nivel": "Avançado",
+      "modulos": 13,
+      "xp_total": 7400,
+      "badges": [
+        "HealthTech AI",
+        "Medical Imaging Pro",
+        "MONAI Developer"
+      ],
+      "promocoes": {
+        "desconto": "20%",
+        "validade": "2025-10-20",
+        "cupom": "HEALTH20"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Classificação de radiografias com CNN", "data": "2025-03-22", "duracao_min": 135 },
+        { "titulo": "Segmentação de tumores com U-Net e MONAI", "data": "2025-05-03", "duracao_min": 150 }
+      ]
+    },
+    {
+      "id": 22,
+      "nome": "Robótica Inteligente com ROS e IA",
+      "tecnologia": ["ROS2", "Python", "TensorFlow", "Gazebo"],
+      "nivel": "Avançado",
+      "modulos": 15,
+      "xp_total": 8500,
+      "badges": [
+        "Robotics AI Engineer",
+        "ROS2 Expert",
+        "Autonomous Systems",
+        "Simulation Pro"
+      ],
+      "promocoes": {
+        "desconto": "15%",
+        "validade": "2025-11-25",
+        "cupom": "ROBOT15ROS"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Navegação autônoma com ROS2 e sensores LiDAR", "data": "2025-04-05", "duracao_min": 150 },
+        { "titulo": "Integração de visão computacional em robôs", "data": "2025-05-18", "duracao_min": 135 }
+      ]
+    },
+    {
+      "id": 23,
+      "nome": "Graph Neural Networks e IA em Grafos",
+      "tecnologia": ["Python", "PyTorch Geometric", "Neo4j", "NetworkX"],
+      "nivel": "Avançado",
+      "modulos": 12,
+      "xp_total": 7100,
+      "badges": [
+        "Graph AI Specialist",
+        "GNN Architect",
+        "Knowledge Graph Pro"
+      ],
+      "promocoes": {
+        "desconto": "10%",
+        "validade": "2025-12-05",
+        "cupom": "GNN10"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "GCN e GraphSAGE para classificação de nós", "data": "2025-04-14", "duracao_min": 120 },
+        { "titulo": "Knowledge Graphs com Neo4j e LLMs", "data": "2025-05-30", "duracao_min": 135 }
+      ]
+    },
+    {
+      "id": 24,
+      "nome": "Edge AI: IA Embarcada com TensorFlow Lite",
+      "tecnologia": ["TensorFlow Lite", "Python", "Raspberry Pi", "Arduino"],
+      "nivel": "Intermediário",
+      "modulos": 10,
+      "xp_total": 5300,
+      "badges": [
+        "Edge AI Developer",
+        "Embedded Systems AI",
+        "TFLite Pro"
+      ],
+      "promocoes": {
+        "desconto": "25%",
+        "validade": "2025-09-20",
+        "cupom": "EDGE25TFL"
+      },
+      "vitalicio": false,
+      "lives_ao_vivo": [
+        { "titulo": "Rodando modelos de IA no Raspberry Pi", "data": "2025-03-29", "duracao_min": 120 },
+        { "titulo": "Otimização e quantização com TFLite", "data": "2025-05-12", "duracao_min": 90 }
+      ]
+    },
+    {
+      "id": 25,
+      "nome": "IA Ética, Responsável e Explicável (XAI)",
+      "tecnologia": ["Python", "SHAP", "LIME", "Fairlearn"],
+      "nivel": "Intermediário",
+      "modulos": 8,
+      "xp_total": 4200,
+      "badges": [
+        "Ethical AI Advocate",
+        "XAI Practitioner",
+        "Fairness Engineer"
+      ],
+      "promocoes": {
+        "desconto": "35%",
+        "validade": "2025-08-10",
+        "cupom": "XAI35ETH"
+      },
+      "vitalicio": true,
+      "lives_ao_vivo": [
+        { "titulo": "Interpretabilidade de modelos com SHAP", "data": "2025-03-03", "duracao_min": 90 },
+        { "titulo": "Viés algorítmico e mitigação com Fairlearn", "data": "2025-04-16", "duracao_min": 120 },
+        { "titulo": "Regulamentação de IA: LGPD e AI Act europeu", "data": "2025-05-27", "duracao_min": 90 }
+      ]
+    }
+  ]
 }
